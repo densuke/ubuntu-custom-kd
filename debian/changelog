@@ -1,3 +1,9 @@
+ubuntu-custom-kd (12.04-kd1) precise; urgency=low
+
+  * 実習室用カスタマイズバージョンの設定
+
+ -- densuke <densuke@ubuntu>  Mon, 20 Aug 2012 11:30:23 +0900
+
 ubuntu-custom-kd (12.04-0ubuntu1~ja4ubuntu1) precise; urgency=low
 
   * Custom version

@@ -1,5 +1,5 @@
 Package: ubuntu-custom-kd
-Version: 12.04-0ubuntu1~ja4ubuntu1
+Version: 12.04-kd1
 Architecture: all
 Maintainer: Sato Daisuke <densuke@ex.kobedenshi.ac.jp>
 Installed-Size: 5
