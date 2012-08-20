@@ -31,4 +31,4 @@ subversion
 git
 zsh
 nkf
-openjdk-7-jdk
+w3m

@@ -1,3 +1,9 @@
+ubuntu-custom-kd (12.04-kd1ubuntu2) precise; urgency=low
+
+  * w3mを依存関係に追加、逆にopenjdk-7-jdkを依存関係から外した
+
+ -- densuke <densuke@ubuntu>  Mon, 20 Aug 2012 12:13:02 +0900
+
 ubuntu-custom-kd (12.04-kd1ubuntu1) precise; urgency=low
 
   * テストバージョン: LibreOffice近辺の削除コードをchrootに投入
