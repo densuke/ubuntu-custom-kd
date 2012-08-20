@@ -1,0 +1,48 @@
+ubuntu-custom-kd (12.04-0ubuntu1~ja4ubuntu1) precise; urgency=low
+
+  * Custom version
+
+ -- densuke <densuke@ex.kobedenshi.ac.jp>  Fri, 17 Aug 2012 16:45:09 +0900
+
+ubuntu-custom-kd (12.04-0ubuntu1~ja4) precise; urgency=low
+
+  * hooks/chroot: don't purge any fonts.
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Mon, 30 Apr 2012 21:14:39 +0900
+
+ubuntu-custom-kd (12.04-0ubuntu1~ja3) precise; urgency=low
+
+  * hooks/chroot: purge more fonts.
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Sat, 21 Apr 2012 13:35:19 +0900
+
+ubuntu-custom-kd (12.04-0ubuntu1~ja2) precise; urgency=low
+
+  * i18n/langpacks.txt: change 'ja complete' to 'ja'
+  * depends.txt: add essential packages for Japanese users.
+  * hooks/chroot: purge fonts-nanum to reduce the size of a squashfs.
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Wed, 18 Apr 2012 10:48:33 +0900
+
+ubuntu-custom-kd (12.04-0ubuntu1~ja1) precise; urgency=low
+
+  * debian/control: Bump Standards-Version to 3.9.3
+  * hooks/chroot:
+    change url to precise
+    omit overwriting /etc/fonts/conf.avail/69-language-selector-ja-jp.conf
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Sat, 14 Apr 2012 05:36:13 +0900
+
+ubuntu-custom-kd (11.10-0ubuntu1~ja2) oneiric; urgency=low
+
+  * hooks/chroot:
+    Overwrite /etc/fonts/conf.avail/69-language-selector-ja-jp.conf to 
+    remove <test name="lang" compare="contains"><string>ja</string></test>. 
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Thu, 13 Oct 2011 14:59:49 +0900
+
+ubuntu-custom-kd (11.10-0ubuntu1~ja1) oneiric; urgency=low
+
+  * Initial release.
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Sat, 01 Oct 2011 01:40:43 +0900

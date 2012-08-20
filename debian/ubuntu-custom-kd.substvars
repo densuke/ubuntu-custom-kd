@@ -1,0 +1,2 @@
+ubuntudefaults:Depends=libreoffice-l10n-ja, firefox-locale-ja, thunderbird-locale-ja, fonts-takao-pgothic, fonts-takao-gothic, fonts-takao-mincho, poppler-data, cmap-adobe-japan1, ibus-anthy, ibus-mozc, ibus-skk, kasumi, ddskk, subversion, git, zsh, nkf, openjdk-7-jdk
+misc:Depends=dconf-gsettings-backend | gsettings-backend

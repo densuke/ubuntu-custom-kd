@@ -1,0 +1,7 @@
+# The search engine that will be selected by default.
+# For now only Firefox is supported.
+#
+# Format: single line with search engine name
+#
+# Example:
+# Wikipedia (de)

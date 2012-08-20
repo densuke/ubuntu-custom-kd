@@ -1,0 +1,12 @@
+# The following bookmarks will be appended to the default bookmark folders in the menu
+# For now only Firefox is supported.
+#
+# Format: arbitrarily many lines with
+# URL Name
+#
+# Example:
+# http://www.ubuntu.de	Deutsches Ubuntu-Forum
+# http://www.heise.de	heise Computer-Nachrichten
+http://www.ubuntulinux.jp	Ubuntu Japanese Team
+https://forums.ubuntulinux.jp	Ubuntu日本語フォーラム
+http://fuga.jp/m/	神戸電子Moodle出張所(2年生,一部3年生)

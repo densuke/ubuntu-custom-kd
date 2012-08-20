@@ -1,0 +1,19 @@
+Source: ubuntu-custom-kd
+Section: metapackages
+Priority: optional
+Maintainer: Sato Daisuke <densuke@ex.kobedenshi.ac.jp>
+Build-Depends: debhelper (>= 7.0.50~),
+ ubuntu-defaults-builder
+Standards-Version: 3.9.3
+
+Package: ubuntu-custom-kd
+Architecture: all
+Replaces: ubuntu-desktop-ja
+Depends: ${misc:Depends},
+ ${ubuntudefaults:Depends}
+Recommends: ${ubuntudefaults:Recommends}
+Provides: ubuntu-default-settings
+Conflicts: ubuntu-default-settings, ubuntu-desktop-ja
+Description: Default settings for Ubuntu customizations
+ This package contains customized default settings.
+

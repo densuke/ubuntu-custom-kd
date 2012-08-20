@@ -1,0 +1,7 @@
+# The following URL will become the web browser start page when starting in offline mode.
+# For now only Firefox is supported.
+#
+# Format: single line with an URL, which should be locally available (file://)
+#
+# Example:
+# file:///usr/share/ubuntu-artwork/home/firefox-index.html
