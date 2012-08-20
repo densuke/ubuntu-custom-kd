@@ -1,3 +1,9 @@
+ubuntu-custom-kd (12.04-kd1ubuntu1) precise; urgency=low
+
+  * テストバージョン: LibreOffice近辺の削除コードをchrootに投入
+
+ -- densuke <densuke@ubuntu>  Mon, 20 Aug 2012 11:51:40 +0900
+
 ubuntu-custom-kd (12.04-kd1) precise; urgency=low
 
   * 実習室用カスタマイズバージョンの設定
