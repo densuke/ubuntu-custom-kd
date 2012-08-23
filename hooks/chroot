@@ -16,7 +16,7 @@ fontconfig-voodoo -s ja_JP
 wget -q https://www.ubuntulinux.jp/ubuntu-ja-archive-keyring.gpg -O- | sudo apt-key add -
 wget -q https://www.ubuntulinux.jp/ubuntu-jp-ppa-keyring.gpg -O- | sudo apt-key add -
 wget -q https://www.ubuntulinux.jp/sources.list.d/precise.list -O /etc/apt/sources.list.d/ubuntu-ja.list
-apt-get purge --yes libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-emailmerge libreoffice-gnome libreoffice-gtk libreoffice-help-en-us libreoffice-help-ja libreoffice-impress libreoffice-l10n-ja libreoffice-math libreoffice-style-human libreoffice-style-tango libreoffice-writer 
+apt-get purge --yes libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-emailmerge libreoffice-gnome libreoffice-gtk libreoffice-help-en-us libreoffice-help-ja libreoffice-impress libreoffice-l10n-ja libreoffice-math libreoffice-style-human libreoffice-style-tango libreoffice-writer software-center
 apt-get autoremove --yes
 apt-get update
 apt-get upgrade --yes
