@@ -3,7 +3,7 @@ bd8ca12362c9eaf2dc375393c5a32832  usr/lib/firefox/distribution/distribution.ini
 2e3dee32d0d8140c88d7b53eda99e247  usr/share/doc/ubuntu-custom-kd/copyright
 976a63f2d3e1588f43bd16930aa409dc  usr/share/gconf/ubuntu-2d/default/zz_ubuntu-custom-kd
 807b46db812834728a09dc876ebbdd98  usr/share/glib-2.0/schemas/ubuntu-custom-kd.gschema.override
-532508ae3237a0ee8239eb73c00dd89f  usr/share/ubuntu-custom-kd/hooks/chroot
+2e952213d85b3a93d90137794957206d  usr/share/ubuntu-custom-kd/hooks/chroot
 55add3d845bfcd87a9b0949b0da49c0a  usr/share/ubuntu-custom-kd/keyboard.txt
 a78c5bf69b40d464b954ef76815c6fa0  usr/share/ubuntu-custom-kd/langpacks.txt
 894dd291a85a0acc96bfb9eeba5f97e7  usr/share/ubuntu-custom-kd/language.txt

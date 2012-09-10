@@ -35,4 +35,6 @@ w3m
 nfs-common
 autofs
 filezilla
+libxss1
+
 
