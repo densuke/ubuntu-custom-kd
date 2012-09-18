@@ -32,10 +32,8 @@ git
 zsh
 nkf
 w3m
-nfs-common
-autofs
+#nfs-common
+#autofs
 filezilla
 libxss1
 openjdk-7-jdk
-
-
