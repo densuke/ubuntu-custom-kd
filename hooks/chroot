@@ -21,7 +21,7 @@ apt-get update
 apt-get upgrade --yes
 apt-get autoremove --yes
 apt-get clean
-exit 0
+#exit 0
 
 # --- 以下を実行させたければ上のexit 0 を外してください
 echo 'LANG="ja_JP.UTF-8"' > /etc/default/locale
