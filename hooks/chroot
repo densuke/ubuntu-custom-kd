@@ -74,6 +74,7 @@ VERBOSE=no
 FSCKFIX=no
 EOM
 
+echo "Asia/Tokyo" > /etc/timezone
 echo "tzdata	tzdata/Areas	select	Asia" | debconf-set-selections
 echo "tzdata	tzdata/Zones/Asia	select	Tokyo" | debconf-set-selections
 dpkg-reconfigure -p critical tzdata
