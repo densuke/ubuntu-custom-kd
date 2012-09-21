@@ -10,3 +10,4 @@
 # simple-scan
 # sol aisleriot
 gnome-terminal
+google-chrome

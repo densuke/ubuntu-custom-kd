@@ -78,3 +78,11 @@ echo "Asia/Tokyo" > /etc/timezone
 echo "tzdata	tzdata/Areas	select	Asia" | debconf-set-selections
 echo "tzdata	tzdata/Zones/Asia	select	Tokyo" | debconf-set-selections
 dpkg-reconfigure -p critical tzdata
+
+cd /tmp
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
+rm -f google-chrome-stable_current_amd64.deb
+cd -
+
+
