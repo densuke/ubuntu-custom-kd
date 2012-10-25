@@ -2,8 +2,8 @@ Package: ubuntu-custom-kd
 Version: 12.04-kd1ubuntu3
 Architecture: all
 Maintainer: Sato Daisuke <densuke@ex.kobedenshi.ac.jp>
-Installed-Size: 70
-Depends: dconf-gsettings-backend | gsettings-backend, libreoffice-l10n-ja, firefox-locale-ja, thunderbird-locale-ja, fonts-takao-pgothic, fonts-takao-gothic, fonts-takao-mincho, poppler-data, cmap-adobe-japan1, ibus-anthy, ibus-mozc, ibus-skk, kasumi, ddskk, subversion, git, zsh, nkf, w3m, nfs-common, autofs, filezilla
+Installed-Size: 71
+Depends: dconf-gsettings-backend | gsettings-backend, libreoffice-l10n-ja, firefox-locale-ja, thunderbird-locale-ja, fonts-takao-pgothic, fonts-takao-gothic, fonts-takao-mincho, poppler-data, cmap-adobe-japan1, ibus-anthy, ibus-mozc, ibus-skk, kasumi, ddskk, subversion, git, zsh, nkf, w3m, nfs-common, autofs, filezilla, libxss1, openjdk-7-jdk, libsvnclientadapter-java
 Conflicts: ubuntu-default-settings, ubuntu-desktop-ja
 Replaces: ubuntu-desktop-ja
 Provides: ubuntu-default-settings

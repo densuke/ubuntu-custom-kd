@@ -38,3 +38,4 @@ filezilla
 libxss1
 openjdk-7-jdk
 libsvnclientadapter-java
+lvm2
