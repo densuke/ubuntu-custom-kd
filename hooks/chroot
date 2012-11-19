@@ -81,16 +81,15 @@ dpkg-reconfigure -p critical tzdata
 
 # chrome
 if [ $(uname -m) = "x86_64" ]; then
- FNAME="google-chrome-stable_current_amd64.deb"
+ wget "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 else
- FNAME="google-chrome-stable_current_i386.deb"
+ wget "https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb"
 fi
 
-GURL="https://dl.google.com/linux/direct/${FNAME}"
 cd /tmp
 wget ${GURL}
-dpkg -i ${FNAME}
-rm -f ${FNAME}
+dpkg -i google-chrome*.deb
+rm -f google-chrome*.deb
 cd -
 
 
