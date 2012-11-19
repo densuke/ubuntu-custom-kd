@@ -87,7 +87,6 @@ else
 fi
 
 cd /tmp
-wget ${GURL}
 dpkg -i google-chrome*.deb
 rm -f google-chrome*.deb
 cd -
