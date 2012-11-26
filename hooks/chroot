@@ -80,13 +80,12 @@ echo "tzdata	tzdata/Zones/Asia	select	Tokyo" | debconf-set-selections
 dpkg-reconfigure -p critical tzdata
 
 # chrome
-A=i386
 if [ $(uname -m) = "x86_64" ]; then
-	A=amd64
+ wget "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+else
+ wget "https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb"
 fi
 
-FNAME="google-chrome-stable_current_${A}.deb"
-GURL="https://dl.google.com/linux/direct/${FNAME}"
 cd /tmp
 wget -O /tmp/${FNAME} ${GURL}
 dpkg -i /tmp/${FNAME}
