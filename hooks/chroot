@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 # Hook for building live images
@@ -88,9 +88,9 @@ fi
 FNAME="google-chrome-stable_current_${A}.deb"
 GURL="https://dl.google.com/linux/direct/${FNAME}"
 cd /tmp
-wget ${GURL}
-dpkg -i ${FNAME}
-rm -f ${FNAME}
+wget -O /tmp/${FNAME} ${GURL}
+dpkg -i /tmp/${FNAME}
+rm -f /tmp/${FNAME}
 cd -
 
 
