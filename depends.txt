@@ -39,3 +39,5 @@ libxss1
 openjdk-7-jdk
 libsvnclientadapter-java
 lvm2
+zram-config
+openssh-server
