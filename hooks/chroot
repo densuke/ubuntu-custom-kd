@@ -95,4 +95,4 @@ wget "https://dl.google.com/linux/direct/google-chrome-stable_current_$CARCH.deb
 
 dpkg -i /tmp/chrome.deb
 
-
+wget -O- https://www.opscode.com/chef/install.sh | bash
