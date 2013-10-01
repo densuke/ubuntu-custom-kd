@@ -89,4 +89,11 @@ fi
 dpkg -i /tmp/google-chrome*.deb
 cd -
 
+apt-get purge dnsmasq-base -y
+cat <<EOM > /etc/network/intefaces
+auto lo
+iface lo inet loopback
 
+auto eth0
+iface eth0 inet dhcp
+EOM
