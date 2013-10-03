@@ -94,13 +94,7 @@ fi
 wget "https://dl.google.com/linux/direct/google-chrome-stable_current_$CARCH.deb" -O /tmp/chrome.deb
 dpkg -i /tmp/chrome.deb
 
-wget -O- https://www.opscode.com/chef/install.sh | bash
+#wget -O- https://www.opscode.com/chef/install.sh | bash
+sudo gem install chef
 
-apt-get purge dnsmasq-base -y
-cat <<EOM > /etc/network/intefaces
-auto lo
-iface lo inet loopback
 
-auto eth0
-iface eth0 inet dhcp
-EOM

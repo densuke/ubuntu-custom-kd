@@ -41,3 +41,4 @@ libsvnclientadapter-java
 lvm2
 zram-config
 openssh-server
+ruby1.9.3
