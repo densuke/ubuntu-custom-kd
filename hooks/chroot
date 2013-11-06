@@ -95,6 +95,7 @@ wget "https://dl.google.com/linux/direct/google-chrome-stable_current_$CARCH.deb
 dpkg -i /tmp/chrome.deb
 
 #wget -O- https://www.opscode.com/chef/install.sh | bash
-sudo gem install chef
+apt-get install ruby1.9.3
+gem install chef
 
 
