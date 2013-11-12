@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 if [ "x$BASH" = "x" ]; then
 	echo "this process is using sh, so now restarting with bash"
 	logger -t "mkcdimage" "restarting with bash"
