@@ -96,6 +96,6 @@ dpkg -i /tmp/chrome.deb
 
 #wget -O- https://www.opscode.com/chef/install.sh | bash
 apt-get install ruby1.9.3
-gem install chef
+gem1.9.3 install chef --no-{ri,rdoc}
 
 
