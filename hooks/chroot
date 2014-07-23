@@ -37,7 +37,7 @@ wget -q -O- https://get.docker.io/ubuntu/ | sh
 cd /tmp
 wget -nv https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.3_x86_64.deb -O pkg.deb && dpkg -i pkg.deb && rm -f pkg.deb
 wget -nv http://download.virtualbox.org/virtualbox/4.3.14/virtualbox-4.3_4.3.14-95030~Ubuntu~raring_amd64.deb -O pkg.deb && dpkg -i pkg.deb && rm -f pkg.deb
-apt-get install -y libvpx1 dkms linux-headers-generic-lts-trusty
+apt-get install -f
 
 # --- 以下を実行させたければ上のexit 0 を外してください
 echo 'LANG="ja_JP.UTF-8"' > /etc/default/locale
