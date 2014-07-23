@@ -23,6 +23,10 @@ wget -q https://www.ubuntulinux.jp/ubuntu-jp-ppa-keyring.gpg -O- | sudo apt-key 
 wget -q https://www.ubuntulinux.jp/sources.list.d/precise.list -O /etc/apt/sources.list.d/ubuntu-ja.list
 # apt-get purge --yes libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-emailmerge libreoffice-gnome libreoffice-gtk libreoffice-help-en-us libreoffice-help-ja libreoffice-impress libreoffice-l10n-ja libreoffice-math libreoffice-style-human libreoffice-style-tango libreoffice-writer software-center firefox-locale-en
 apt-get update
+apt-get install linux-image-generic-lts-trusty
+for i in precise quantal raring saucy; do
+ dpkg -l linux-image-generic-lts-$i && apt-get purge --auto-remove linux-image-generic-raring-$i;
+done
 apt-get upgrade --yes
 apt-get autoremove --yes
 apt-get clean
@@ -95,6 +99,7 @@ wget "https://dl.google.com/linux/direct/google-chrome-stable_current_$CARCH.deb
 dpkg -i /tmp/chrome.deb
 
 #wget -O- https://www.opscode.com/chef/install.sh | bash
+apt-get purge --autoremove ruby1.8
 apt-get install ruby1.9.3
 gem1.9.3 install chef --no-{ri,rdoc}
 
