@@ -25,7 +25,7 @@ wget -q https://www.ubuntulinux.jp/sources.list.d/precise.list -O /etc/apt/sourc
 apt-get update
 apt-get install linux-image-generic-lts-trusty
 for i in precise quantal raring saucy; do
- dpkg -l linux-image-generic-lts-$i && apt-get purge --auto-remove linux-image-generic-raring-$i;
+ dpkg -l linux-image-generic-lts-$i && apt-get purge -y --auto-remove linux-image-generic-raring-$i;
 done
 apt-get upgrade --yes
 apt-get autoremove --yes
