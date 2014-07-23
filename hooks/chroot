@@ -104,7 +104,7 @@ wget -nv "https://dl.google.com/linux/direct/google-chrome-stable_current_$CARCH
 dpkg -i /tmp/chrome.deb && rm -f /tmp/chrome.deb
 
 #wget -O- https://www.opscode.com/chef/install.sh | bash
-apt-get purge --autoremove ruby1.8
+apt-get purge --auto-remove ruby1.8
 apt-get install ruby1.9.3
 gem1.9.3 install chef --no-{ri,rdoc}
 
