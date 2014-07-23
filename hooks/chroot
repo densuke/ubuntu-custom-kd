@@ -25,7 +25,7 @@ wget -q https://www.ubuntulinux.jp/sources.list.d/precise.list -O /etc/apt/sourc
 apt-get update
 apt-get install linux-image-generic-lts-trusty
 for i in precise quantal raring saucy; do
- dpkg -l linux-image-generic-lts-$i && apt-get purge -y --auto-remove linux-image-generic-raring-$i;
+ dpkg -l linux-image-generic-lts-$i && apt-get purge -y --auto-remove linux-image-generic-lts-$i;
 done
 apt-get install -y zram-config
 apt-get upgrade --yes
