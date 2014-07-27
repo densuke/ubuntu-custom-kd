@@ -115,4 +115,5 @@ gem1.9.3 install chef --no-{ri,rdoc}
 
 sudo -u 'ubuntu' -H dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
 sudo -u 'ubuntu' -H dbus-launch gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false
+killall queue.bin
 set -e
