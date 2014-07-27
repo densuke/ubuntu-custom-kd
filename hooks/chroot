@@ -101,10 +101,11 @@ else                   # i386(x86)
 	CARCH="i386"
 fi
 wget "https://dl.google.com/linux/direct/google-chrome-stable_current_$CARCH.deb" -O /tmp/chrome.deb
+apt-get install -y libappindicator1
 dpkg -i /tmp/chrome.deb
 
-apt-get install linux-image-genecic-lts-trusty \
-                libgl1-mesa-glx-lts-trusty
+#apt-get install linux-image-genecic-lts-trusty \
+#                libgl1-mesa-glx-lts-trusty
 
 #wget -O- https://www.opscode.com/chef/install.sh | bash
 apt-get purge --autoremove ruby1.8
