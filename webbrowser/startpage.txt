@@ -6,3 +6,5 @@
 #
 # Example:
 # http://www.ubuntuforums.org?release=${distro_release_number}
+http://www.kobedenshi.ac.jp/
+
