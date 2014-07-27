@@ -29,7 +29,7 @@ for i in precise quantal raring saucy; do
  apt-get purge linux-image-generic-lts-$i --auto-remove -y
 done
 set -e
-apt-get upgrade --yes
+#apt-get upgrade --yes
 apt-get autoremove --yes
 apt-get clean
 
@@ -89,31 +89,27 @@ EOM
 echo "Asia/Tokyo" > /etc/timezone
 echo "tzdata	tzdata/Areas	select	Asia" | debconf-set-selections
 echo "tzdata	tzdata/Zones/Asia	select	Tokyo" | debconf-set-selections
-dpkg-reconfigure -p critical tzdata
+#dpkg-reconfigure -p critical tzdata
 cmp /etc/localtime  /usr/share/zoneinfo/Asia/Tokyo 
 [ ! $? = 0 ] && cp -f /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
-# chrome
-CARCH=""
-if [ -d /lib64 ]; then # amd64(x86_64)
-	CARCH="amd64"
-else                   # i386(x86)
-	CARCH="i386"
-fi
-wget "https://dl.google.com/linux/direct/google-chrome-stable_current_$CARCH.deb" -O /tmp/chrome.deb
-apt-get install -y libappindicator1
-dpkg -i /tmp/chrome.deb
-
-#apt-get install linux-image-genecic-lts-trusty \
-#                libgl1-mesa-glx-lts-trusty
-
-#wget -O- https://www.opscode.com/chef/install.sh | bash
-set +e
-apt-get purge --auto-remove ruby1.8
-apt-get install ruby1.9.3
-gem1.9.3 install chef --no-{ri,rdoc}
-
-sudo -u 'ubuntu' -H dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
-sudo -u 'ubuntu' -H dbus-launch gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false
-killall queue.bin
-set -e
+## chrome
+#CARCH=""
+#if [ -d /lib64 ]; then # amd64(x86_64)
+#	CARCH="amd64"
+#else                   # i386(x86)
+#	CARCH="i386"
+#fi
+#wget "https://dl.google.com/linux/direct/google-chrome-stable_current_$CARCH.deb" -O /tmp/chrome.deb
+#apt-get install -y libappindicator1
+#dpkg -i /tmp/chrome.deb
+#
+#set +e
+#apt-get purge --auto-remove ruby1.8
+#apt-get install ruby1.9.3
+#gem1.9.3 install chef --no-{ri,rdoc}
+#
+#sudo -u 'ubuntu' -H dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
+#sudo -u 'ubuntu' -H dbus-launch gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false
+#killall queue.bin
+#set -e
